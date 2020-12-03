@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+
+	<body>
+		{% include header.html %}
+
+		{% assign subject_list = page.path | split: "/" %}
+		{% assign subject = subject_list[1] %}
+
+		<div class="download-button-container">
+			<button type="button" class="download-button" onclick="window.print();return false;">Download this lesson as PDF</button>
+		</div>
+		<div class="article-container">
+		  <h1 class="article-title">{{ page.title }}</h1>
+		  <span class="article-date">{{ page.date | date_to_string }}</span>
+		  <hr>
+			<div class="article-content">
+				{{ content }}
+			</div>
+		</div>
+		<a href="/lessons/{{ subject }}"><button type="button" class="return-button">See all {{ subject }} lessons</button></a>
+
+	</body>
+</html>

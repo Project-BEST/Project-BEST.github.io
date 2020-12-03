@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+
+	<body>
+		{% include header.html %}
+
+		{% assign subject_list = page.path | split: "/" %}
+		{% assign subject = subject_list[1] %}
+
+		<div class="testing">
+			{% for post in site.categories[subject] %}
+				<div class="lesson-card">
+					<a href="{{ post.url }}"><h2 class="lesson-title">{{ post.title }}</h2></a>
+					<div class="lesson-description">{{ post.description }}</div>
+				</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>

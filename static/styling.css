@@ -1,0 +1,182 @@
+a {
+	text-decoration: none;
+	color: #EF8354;
+}
+a:active {
+	color: #F3A07C;
+}
+::selection {
+	background-color: #4F5D75;
+	color: #F4F5F5;
+}
+body {
+	margin: 0;
+	font-family: "Trebuchet MS", Helvetica, Tahoma, Geneva, sans-serif;
+	background-color: #F4F5F5
+}
+.header-content {
+	background-color: #2D3142;
+	color: #F4F5F5;
+	margin: 0;
+	text-align: center;
+}
+.logo {
+	user-select: none;
+	max-height: 10rem;
+}
+.website-logo {
+	font-size: 3.5rem;
+	padding: 1rem;
+	margin: 0;
+}
+.tab-container {
+	user-select: none;
+	padding: 1rem 0rem;
+	border-top: #F4F5F5 solid 1px;
+	text-align: center;
+}
+.tab-container a {
+	margin: 0.8rem 1rem;
+	width: 100%;
+}
+.tab-button {
+	padding: 0.75rem;
+	background-color: #EF8354;
+	border: solid 2px #EF8354;
+	border-radius: 8px;
+	outline: none;
+	color: #F4F5F5;
+	width: 13rem;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.tab-button:active {
+	background-color: #F3A07C;
+}
+.lesson-card {
+	margin: 2rem 18rem;
+	padding: 2.5rem;
+	border: solid 2px #EF8354;
+	border-radius: 5px;
+	color: #EF8354;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+.lesson-title {
+	display: inline-block;
+	margin: 0 0 1rem 0;
+	text-decoration: none;
+}
+.lesson-title a {
+	width: 100%;
+}
+.subject-list-container {
+	margin: 0rem 18rem;
+}
+/* Math = red, science = green, English = blue, social = yellow. */
+.subject-container {
+	margin: 4rem 0rem;
+	padding: 2.5rem;
+	text-align: center;
+	border: solid 2px;
+	border-radius: 15px;
+	font-size: 2rem;
+	color: #F4F5F5;
+}
+.subject-container a {
+	width: 100%;
+}
+.subject-container.english {
+	background-color: #6B7FD7;
+}
+.subject-container.english:active {
+	background-color: #8091DC;
+}
+.subject-container.math {
+	background-color: #EE4266;
+}
+.subject-container.math:active {
+	background-color: #F05F7E;
+}
+.subject-container.science {
+	background-color: #5DA271;
+}
+.subject-container.science:active {
+	background-color: #74AF85;
+}
+.subject-container.social-studies {
+	background-color: #FE9920;
+}
+.subject-container.social-studies:active {
+	background-color: #FEA840;
+}
+.info-container {
+	margin: 2rem;
+	padding: 2rem;
+	border: solid 2px #EF8354;
+	border-radius: 10px;
+}
+.article-container {
+	margin: 0rem 2rem;
+	padding: 2.5rem;
+	border: solid 2px #EF8354;
+	border-radius: 10px;
+}
+.article-title {
+	margin: 0rem;
+	color: #EF8354;
+	font-size: 2.2rem;
+}
+.article-date {
+ color: #BFC0C0;
+ font-size: 1.2rem;
+}
+.article-content {
+	color: #2D3142;
+	font-size: 1.2rem;
+}
+.return-button {
+	margin: 1rem;
+	padding: 0.75rem;
+	border: solid 2px #EF8354;
+	border-radius: 6px;
+	background-color: #F4F5F5;
+	outline: none;
+	color: #EF8354;
+	font-size: 1.2rem;
+}
+.return-button:active {
+	background-color: #EF8354;
+	color: #F4F5F5;
+}
+.download-button-container {
+	text-align: center;
+}
+.download-button {
+	margin: 1rem;
+	padding: 1.5rem;
+	border: solid 2px #EF8354;
+	border-radius: 8px;
+	background-color: #F4F5F5;
+	outline: none;
+	color: #EF8354;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.download-button:active {
+	background-color: #EF8354;
+	color: #F4F5F5;
+}
+
+
+@media print {
+	.header-content {
+		display: none;
+	}
+	.download-button {
+		display: none;
+	}
+	.return-button {
+		display: none;
+	}
+}
